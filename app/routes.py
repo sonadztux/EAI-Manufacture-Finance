@@ -19,7 +19,7 @@ def transaction_by_dept(dept):
     return TransactionController.getByDepartment(dept)
 
 
-@app.route('/finance/transaction/<id>', methods=['GET', 'PUT', 'DELETE'])
+@app.route('/api/finance/transaction/<id>', methods=['GET', 'PUT', 'DELETE'])
 def transaction_detail(id: int):
     if request.method == 'PUT':
         return TransactionController.update(id)

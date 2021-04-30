@@ -32,7 +32,6 @@ def getByDepartment(dept):
     except Exception as error:
         print(error)
 
-
 def save():
     try:
         department = request.form.get('department')
