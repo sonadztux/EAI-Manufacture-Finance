@@ -8,6 +8,7 @@ class Config(object):
     USERNAME = str(os.environ.get("DB_USERNAME"))
     PASSWORD = str(os.environ.get("DB_PASSWORD"))
 
+    JSON_SORT_KEYS = False
 
     JWT_SECRET_KEY = str(os.environ.get("JWT_SECRET"))
     
